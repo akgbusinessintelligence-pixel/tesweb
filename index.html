@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshNest Cleaning Co.</title>
+  <style>
+    :root {
+      --primary: #0ea5a8;
+      --primary-dark: #0b7d80;
+      --bg: #f6fbfb;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --card: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: linear-gradient(160deg, #e8f8f8 0%, #f9fcfc 60%);
+      line-height: 1.5;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 1rem 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+
+    .hero {
+      padding: 4rem 0 3rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.2;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 1rem auto 2rem;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .cta {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0.85rem 1.35rem;
+      border-radius: 0.6rem;
+    }
+
+    .cta:hover { background: var(--primary-dark); }
+
+    .features {
+      padding: 1rem 0 4rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 0.8rem;
+      padding: 1.2rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .card h3 {
+      margin: 0 0 0.5rem;
+      color: var(--primary-dark);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.3rem 0 2rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <nav>
+      <div class="brand">FreshNest Cleaning Co.</div>
+      <a class="cta" href="#contact">Book a Clean</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Sparkling Homes, Stress-Free Living</h1>
+      <p>
+        FreshNest Cleaning Co. delivers reliable, eco-friendly cleaning services for homes and offices.
+        Let our trained professionals refresh your space while you focus on what matters most.
+      </p>
+      <a class="cta" href="#contact">Get a Free Quote</a>
+    </section>
+
+    <section class="features">
+      <article class="card">
+        <h3>Standard Cleaning</h3>
+        <p>Weekly or bi-weekly maintenance cleaning to keep your home spotless and comfortable.</p>
+      </article>
+      <article class="card">
+        <h3>Deep Cleaning</h3>
+        <p>Top-to-bottom attention for kitchens, bathrooms, and hard-to-reach areas that need extra care.</p>
+      </article>
+      <article class="card">
+        <h3>Move In/Out</h3>
+        <p>Detailed cleaning solutions for smooth transitions when moving into or out of any property.</p>
+      </article>
+      <article class="card" id="contact">
+        <h3>Contact Us</h3>
+        <p>Call <strong>(555) 123-4567</strong> or email <strong>hello@freshnestcleaning.com</strong>.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 FreshNest Cleaning Co. • Licensed & Insured
+  </footer>
+</body>
+</html>
